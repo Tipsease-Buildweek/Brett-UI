@@ -2,12 +2,23 @@ header {
   background: @bg-color;
   .flex-set();
   justify-content: space-between;
-  padding: 2%;
+  padding: 1%;
+  text-align: center;
+  box-shadow: @shadow;
+  //   border-radius: 8px;
+
+  img {
+    padding-left: 10px;
+    // display: inline-block;
+    width: 140px;
+  }
   nav {
     width: 50%;
     .flex-set();
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     a {
+      padding: 0 2%;
       text-decoration: none;
       color: white;
       &:hover {
