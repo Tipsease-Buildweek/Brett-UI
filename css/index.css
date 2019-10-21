@@ -149,6 +149,16 @@ h2 {
   margin: 0 auto;
   height: 100%;
 }
+@media (min-width: 500px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media (min-width: 800px) {
+  .container {
+    max-width: 1300px;
+  }
+}
 header {
   background: #ec7357;
   display: flex;
@@ -167,6 +177,16 @@ header nav {
   justify-content: space-around;
   align-items: center;
 }
+@media (min-width: 500px) {
+  header nav {
+    width: 40%;
+  }
+}
+@media (min-width: 800px) {
+  header nav {
+    width: 30%;
+  }
+}
 header nav a {
   padding: 0 2%;
   text-decoration: none;
@@ -176,8 +196,9 @@ header nav a:hover {
   text-decoration: underline;
 }
 footer {
-  height: 70px;
+  height: 10%;
   background: #434341a3;
+  padding-bottom: 2%;
 }
 footer .mini-nav {
   text-align: center;
@@ -212,27 +233,42 @@ main .top-content {
   justify-content: center;
   align-items: center;
 }
-main .top-content .overlay-cont {
+main .top-content .background-cont {
   width: 100%;
-  padding: 20% 0;
+  min-height: 400px;
+  background: url("https://media.gettyimages.com/photos/waitress-taking-orders-to-people-at-a-restaurant-picture-id506828094?k=6&m=506828094&s=612x612&w=0&h=gs_KmsQsI8DtJUR2-0Zdkp-ZCXKTIDDSkEUbonFJDJI=") center / cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .top-content .overlay-cont h1 {
+main .top-content .background-cont a {
+  position: relative;
+  left: 160px;
+  top: 110px;
+}
+main .top-content .background-cont .overlay-cont {
+  width: 60%;
+  padding: 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(220, 220, 220, 0.8);
+}
+main .top-content .background-cont .overlay-cont h1 {
   color: black;
   text-align: center;
   background: none;
   box-shadow: none;
 }
-main .top-content .overlay-cont p {
+main .top-content .background-cont .overlay-cont p {
   padding-left: 100px;
 }
-main .top-content .overlay-cont button {
-  border: 1px solid black;
-  margin: 8%;
-  padding: 3%;
+main .top-content .background-cont .overlay-cont button {
+  margin: 2%;
+  padding: 2%;
   border-radius: 10px;
   color: white;
   background: #94c9a9;
@@ -243,9 +279,31 @@ main .top-content .why-cont {
   background: white;
   margin-bottom: 3%;
 }
+@media (min-width: 800px) {
+  main .top-content .why-cont {
+    width: 100%;
+    padding-right: 3%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
 main .top-content .why-cont .box {
   padding: 2% 0;
   margin: 3% 0;
+}
+@media (min-width: 500px) {
+  main .top-content .why-cont .box {
+    width: 85%;
+    padding: 0 3%;
+  }
+}
+@media (min-width: 800px) {
+  main .top-content .why-cont .box {
+    width: 50%;
+    padding: 0 1%;
+  }
 }
 main .top-content .why-cont .box h2 {
   padding: 2% 5%;
@@ -258,22 +316,83 @@ main .top-content .why-cont .cont1 {
   transform: skewY(-2deg);
   background: #94c9a9;
 }
+@media (min-width: 500px) {
+  main .top-content .why-cont .cont1 {
+    margin-left: 15%;
+  }
+}
+@media (min-width: 800px) {
+  main .top-content .why-cont .cont1 {
+    margin-left: 5%;
+    transform: skewY(5deg);
+  }
+}
 main .top-content .why-cont .cont1 .problem {
   transform: skewY(2deg);
+}
+@media (min-width: 800px) {
+  main .top-content .why-cont .cont1 .problem {
+    transform: skewY(-5deg);
+    padding: 4% 0;
+  }
 }
 main .top-content .why-cont .cont2 {
   transform: skewY(5deg);
   background: #f4d06f;
 }
+@media (min-width: 500px) {
+  main .top-content .why-cont .cont2 {
+    margin-left: 5%;
+  }
+}
+@media (min-width: 800px) {
+  main .top-content .why-cont .cont2 {
+    transform: skewY(-3deg);
+    width: 50%;
+    margin-left: 52%;
+    margin-top: -16%;
+    padding-top: 3%;
+    z-index: 1;
+  }
+}
 main .top-content .why-cont .cont2 .problem2 {
   transform: skewY(-5deg);
+}
+@media (min-width: 800px) {
+  main .top-content .why-cont .cont2 .problem2 {
+    transform: skewY(3deg);
+    padding: 4% 0;
+  }
 }
 main .top-content .why-cont .cont3 {
   background: #777da7;
   transform: skewY(-4deg);
 }
+@media (min-width: 500px) {
+  main .top-content .why-cont .cont3 {
+    margin-left: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}
+@media (min-width: 800px) {
+  main .top-content .why-cont .cont3 {
+    margin-left: 10%;
+    margin-top: -8%;
+    width: 50%;
+    transform: skewY(4deg);
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 5%;
+  }
+}
 main .top-content .why-cont .cont3 .problem3 {
   transform: skewY(4deg);
+}
+@media (min-width: 800px) {
+  main .top-content .why-cont .cont3 .problem3 {
+    transform: skewY(-4deg);
+  }
 }
 main .features h1 {
   width: 100%;
@@ -287,15 +406,31 @@ main .features .feat-cont {
   color: black;
   margin: 5% 0;
 }
+@media (min-width: 800px) {
+  main .features .feat-cont {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 main .features .feat-cont .fea-box {
   padding: 3%;
-  width: 60%;
+  width: 75%;
   margin: 3% 0;
   background: white;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 800px) {
+  main .features .feat-cont .fea-box {
+    width: 30%;
+  }
 }
 main .features .feat-cont .fea-box .mask {
   color: #777da7;
@@ -309,6 +444,7 @@ main .features .feat-cont .fea-box .lemon {
 main .features .feat-cont .fea-box h2,
 main .features .feat-cont .fea-box p {
   padding: 3%;
+  text-align: center;
 }
 main .features .feat-cont .fea-box hr {
   width: 100%;

@@ -1,0 +1,37 @@
+main {
+  .mono {
+    h1 {
+      font-size: 2rem;
+      box-shadow: none;
+    }
+  }
+
+  .img-grid {
+    width: 100%;
+    h1 {
+      .h1-style();
+    }
+    .people {
+      margin: 3% 0;
+      .flex-set();
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .person-box {
+        margin: 3% 0;
+        .flex-set();
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        box-shadow: @shadow-box;
+        img {
+          display: inline-block;
+          width: 80%;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
