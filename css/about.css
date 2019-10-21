@@ -347,7 +347,10 @@ main .img-grid .people .person-box .overlay .text-content h2 {
 main .img-grid .people .person-box .overlay .text-content .contact-btns {
   padding: 10% 0;
 }
-main .img-grid .people .person-box .overlay .text-content .contact-btns i {
+main .img-grid .people .person-box .overlay .text-content .contact-btns a {
+  color: white;
+}
+main .img-grid .people .person-box .overlay .text-content .contact-btns a i {
   padding: 0 1%;
 }
 main .img-grid .people .person-box .brian,
@@ -355,11 +358,11 @@ main .img-grid .people .person-box .nicholas {
   background-color: #f4d06f;
 }
 main .img-grid .people .person-box .kayla,
-main .img-grid .people .person-box .shiva {
+main .img-grid .people .person-box .brett {
   background-color: #777da7;
 }
 main .img-grid .people .person-box .lee,
-main .img-grid .people .person-box .brett {
+main .img-grid .people .person-box .shiva {
   background-color: #94c9a9;
 }
 main .contact {
