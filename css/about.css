@@ -156,7 +156,7 @@ h2 {
 }
 @media (min-width: 800px) {
   .container {
-    max-width: 1300px;
+    max-width: 1200px;
   }
 }
 header {
@@ -172,7 +172,7 @@ header img {
   width: 140px;
 }
 header nav {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -188,12 +188,15 @@ header nav {
   }
 }
 header nav a {
-  padding: 0 2%;
+  padding: 4%;
   text-decoration: none;
   color: white;
+  font-size: 1rem;
 }
 header nav a:hover {
-  text-decoration: underline;
+  background: white;
+  color: #ec7357;
+  padding: 4%;
 }
 footer {
   height: 10%;
