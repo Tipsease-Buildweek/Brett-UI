@@ -313,7 +313,6 @@ main .img-grid .people .person-box:hover .overlay {
 main .img-grid .people .person-box img {
   display: block;
   width: 100%;
-  padding: 2% 0;
   border-radius: 10px;
 }
 main .img-grid .people .person-box .overlay {
@@ -336,7 +335,6 @@ main .img-grid .people .person-box .overlay .text-content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   text-align: center;
