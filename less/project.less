@@ -1,0 +1,231 @@
+main {
+  h1 {
+    background: @bg-color;
+    color: white;
+    padding: 2% 0;
+    padding-left: 2%;
+    width: 100%;
+    z-index: 1;
+    // border-radius: 8px;
+  }
+
+  .top-content {
+    width: 100%;
+    .flex-set();
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .background-cont {
+      width: 100%;
+      min-height: 400px;
+      background: url("https://media.gettyimages.com/photos/waitress-taking-orders-to-people-at-a-restaurant-picture-id506828094?k=6&m=506828094&s=612x612&w=0&h=gs_KmsQsI8DtJUR2-0Zdkp-ZCXKTIDDSkEUbonFJDJI=")
+        center/cover;
+      background-repeat: no-repeat;
+      .flex-set();
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media @desktop {
+        background-position: 0 20%;
+      }
+      a {
+        position: relative;
+        left: 160px;
+        top: 110px;
+      }
+      .overlay-cont {
+        width: 60%;
+        padding: 3% 0;
+        .flex-set();
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(220, 220, 220, 0.8);
+
+        h1 {
+          color: black;
+          text-align: center;
+          background: none;
+          box-shadow: none;
+        }
+
+        p {
+          padding-left: 100px;
+        }
+
+        button {
+          margin: 2%;
+          padding: 2%;
+          border-radius: 10px;
+          color: white;
+          background: @bg-lite;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .why-cont {
+      width: 90%;
+      background: white;
+      margin-bottom: 3%;
+      //   box-shadow: @shadow-box;
+      @media @desktop {
+        width: 100%;
+        padding-right: 3%;
+        padding-left: 0;
+        .flex-set();
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+      .box {
+        padding: 2% 0;
+        margin: 3% 0;
+        @media @tablet {
+          width: 85%;
+          padding: 0 3%;
+        }
+        @media @desktop {
+          width: 50%;
+          padding: 0 1%;
+        }
+        h2 {
+          padding: 2% 5%;
+          font-size: 1.5rem;
+        }
+        p {
+          padding: 2% 5%;
+        }
+      }
+      .cont1 {
+        transform: skewY(-2deg);
+        background: @bg-lite;
+        @media @tablet {
+          margin-left: 15%;
+        }
+        @media @desktop {
+          margin-left: 5%;
+          transform: skewY(5deg);
+        }
+        .problem {
+          transform: skewY(2deg);
+          @media @desktop {
+            transform: skewY(-5deg);
+            padding: 4% 0;
+          }
+        }
+      }
+      .cont2 {
+        transform: skewY(5deg);
+        background: #f4d06f;
+        @media @tablet {
+          margin-left: 5%;
+        }
+        @media @desktop {
+          transform: skewY(-3deg);
+          width: 50%;
+          margin-left: 52%;
+          margin-top: -16%;
+          padding-top: 3%;
+          z-index: 1;
+        }
+        .problem2 {
+          transform: skewY(-5deg);
+          @media @desktop {
+            transform: skewY(3deg);
+            padding: 4% 0;
+          }
+        }
+      }
+      .cont3 {
+        background: #777da7;
+        transform: skewY(-4deg);
+        @media @tablet {
+          margin-left: 15%;
+          padding-top: 3%;
+          padding-bottom: 3%;
+        }
+        @media @desktop {
+          margin-left: 10%;
+          margin-top: -8%;
+          width: 50%;
+          transform: skewY(4deg);
+          padding-top: 4%;
+          padding-bottom: 4%;
+          padding-right: 5%;
+        }
+        .problem3 {
+          transform: skewY(4deg);
+          @media @desktop {
+            transform: skewY(-4deg);
+          }
+        }
+      }
+    }
+  }
+
+  .features {
+    h1 {
+      width: 100%;
+      z-index: 1;
+    }
+    .feat-cont {
+      .flex-set();
+      flex-direction: column;
+      align-items: center;
+      // background: #f7f7f7;
+      background: white;
+      color: black;
+      margin: 5% 0;
+      @media @desktop {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 3%;
+        .flex-set();
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .fea-box {
+        padding: 3%;
+        width: 75%;
+        margin: 3% 0;
+        background: white;
+
+        box-shadow: @shadow-box;
+        .flex-set();
+        flex-direction: column;
+        align-items: center;
+
+        @media @desktop {
+          width: 30%;
+        }
+        .mask {
+          color: #777da7;
+        }
+        .globe {
+          color: @bg-lite;
+        }
+        .lemon {
+          color: #f4d06f;
+        }
+        h2,
+        p {
+          padding: 3%;
+          text-align: center;
+        }
+        hr {
+          width: 100%;
+          border: 0;
+          height: 1px;
+          background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0)
+          );
+        }
+      }
+    }
+  }
+}
